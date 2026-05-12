@@ -20,7 +20,7 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter build apk --release
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
@@ -34,7 +34,7 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter build windows --release
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: windows-build
           path: build/windows/runner/Release
@@ -48,7 +48,7 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter build macos --release
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: macos-app
           path: build/macos/Build/Products/Release/quick_meaning_assistant.app
