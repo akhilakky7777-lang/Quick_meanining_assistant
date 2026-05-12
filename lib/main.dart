@@ -67,7 +67,7 @@ class _AssistantHomeState extends State<AssistantHome>
   late Animation<Offset> _slideAnim;
 
   // ── Replace YOUR_GEMINI_API_KEY_HERE with your key from aistudio.google.com ──
-  static const String _apiKey = 'AIzaSyAa3elhTaeSuqroVaHDknRINBwwt8xoFcg';
+ static const String _apiKey = String.fromEnvironment('AIzaSyDV7sAW56N1t8XfpqUlwDuYMGTgumiXXeQ');
   static const String _geminiUrl =
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
