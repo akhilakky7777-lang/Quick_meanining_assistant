@@ -52,4 +52,3 @@ jobs:
         with:
           name: macos-app
           path: build/macos/Build/Products/Release/quick_meaning_assistant.app
-\\
