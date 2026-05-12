@@ -1,0 +1,28 @@
+Unhandled exception:
+Error on line 38, column 1: Duplicate mapping key.
+   ╷
+38 │ dependencies:
+   │ ^^^^^^^^^^^^
+   ╵
+#0      Loader._loadMapping (package:yaml/src/loader.dart:165:9)
+#1      Loader._loadNode (package:yaml/src/loader.dart:88:35)
+#2      Loader._loadDocument (package:yaml/src/loader.dart:68:20)
+#3      Loader.load (package:yaml/src/loader.dart:60:20)
+#4      loadYamlDocument (package:yaml/yaml.dart:69:25)
+#5      loadYamlNode (package:yaml/yaml.dart:54:5)
+#6      loadYaml (package:yaml/yaml.dart:41:5)
+#7      FlutterManifest.createFromString (package:flutter_tools/src/flutter_manifest.dart:55:28)
+#8      FlutterManifest.createFromPath (package:flutter_tools/src/flutter_manifest.dart:49:28)
+#9      runInContext.<anonymous closure> (package:flutter_tools/src/context_runner.dart:226:44)
+#10     AppContext._generateIfNecessary.<anonymous closure> (package:flutter_tools/src/base/context.dart:108:42)
+#11     _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:675:23)
+#12     AppContext._generateIfNecessary (package:flutter_tools/src/base/context.dart:95:20)
+#13     AppContext.get (package:flutter_tools/src/base/context.dart:125:32)
+#14     featureFlags (package:flutter_tools/src/features.dart:13:42)
+#15     run.<anonymous closure> (package:flutter_tools/runner.dart:55:40)
+#16     runInContext.runnerWrapper (package:flutter_tools/src/context_runner.dart:78:18)
+<asynchronous suspension>
+#17     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#18     main (package:flutter_tools/executable.dart:103:3)
+<asynchronous suspension>
